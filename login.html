@@ -1,7 +1,7 @@
 <?php
-require_once "pdo.php";
+require_once "pdo.html";
     if (isset($_POST['cancel'])) {
-        header('Location: index.php');
+        header('Location: index.html');
     }
     elseif (isset($_POST['login'])) {
 		if ( isset($_POST['who']) && isset($_POST['pass'])) 
@@ -28,7 +28,7 @@ else{
     } 
 	else 
 	{
-      header('Location: autos.php');
+      header('Location: autos.html');
     }		
 	}			
 		}
